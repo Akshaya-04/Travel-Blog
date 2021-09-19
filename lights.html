@@ -1,0 +1,91 @@
+<html>
+<head>
+  <style>
+    body {background-image: url('ice.jfif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;}
+    h2{color:white;}
+    p{color:white;}
+    .tablink {
+      background-color: plum;
+      color: white;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      font-size: 17px;
+      width: 25%;
+      position: absolute;
+      left: 10px;
+      bottom: 5px;
+    }
+
+    .tablink:hover {
+      background-color: #FFEBCD;
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+      color: white;
+      display: none;
+      padding: 50px;
+      text-align: center;
+    }
+    div button {
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    background-color: plum;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+    </style>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  console.log('I am in a new file now');
+  console.log('We are using jQuery');
+  $("button").click(function()
+  {
+    $("p").hide();
+  });
+  $("p").click(function() {
+  $("p").css("background-color", "Plum");
+});
+});
+</script>
+</head>
+<body>
+
+<center><h2>More about Iceland!</h2>
+
+<p class='first'>THE EXTREME DARK OF THE ICELANDIC WINTER HAS A FEW PERKS. BETWEEN SEPTEMBER AND APRIL, ICELAND IS TREATED TO A MAGNIFICENT NATURAL DISPLAY: THE PHENOMENON OF AURORA BOREALIS, OR WHAT WE COMMONLY CALL THE NORTHERN LIGHTS.</p>
+<br><br>
+<img src ="eh.jpg" height="200px" width="300px" class="center">
+<p class='second'>The Aurora Borealis takes its name from the roman goddess of dawn, aurora, and the Greek name for the north wind, boreas. From September to April, Iceland is a hotspot for this magnificent lightshow.</p>
+<br><br>
+<p>The Aurora Borealis, more commonly referred to as the Northern Lights, is a natural phenomenon created when solar particles interact with the atmosphere in the Earth's magnetic field. This releases energy, causing peculiar luminous green streaks across the skies.</p>
+<p><p>
+<p>On clear winter nights, sightseeing trips are organized around this spectacular—though fickle—natural phenomenon. The ideal location for sightings varies and excursion leaders are skilled in "hunting" the lights, finding locations where conditions are best for seeing them on any given night.</p>
+
+<button>Click me to hide paragraphs</button>
+<br><br><br>
+<a href="benefits.html"><button class="tablink" >Previous Page</button></a>
+
+<div>
+    <a href="icelandfinal.html"><button type='button'>Next Page</button></a>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>register</title>
+    <link rel="stylesheet" href="loginstyles.css">
+  <style>
+    h2 {
+      text-align: center;
+    }
+    .tablink {
+      background-color: coral;
+      color: white;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      font-size: 17px;
+      width: 25%;
+    }
+
+    .tablink:hover {
+      background-color: #FFEBCD;
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+      color: white;
+      display: none;
+      padding: 50px;
+      text-align: center;
+    }
+  </style>
+
+
+  <script>
+     function validateForm()
+     {
+      var un=document.forms["login-form"]["email"].value;
+      var pwd=document.forms["login-form"]["pwd"].value;
+
+          if(un==null||un=="")
+         {
+            alert("Email cannot be blank");
+            return false;
+         }
+          else if(pwd==null||pwd=="")
+         {
+            alert("Name cannot be blank")
+            return false;
+         }
+         else {
+           {
+             alert("Form submitted");
+           }
+         }
+     }
+     function reset()
+     {
+       document.getElementbyID("un").innerHTML="";
+       document.getElementbyID("pwd").innerHTML="";
+     }
+  </script>
+</head>
+
+
+
+<body>
+  <div class="heading">
+    <span class="text1"> Travel Bliss</span>
+     <span class="text2"> Have a cup of coffee and relax...</span>
+
+
+
+  <h2>Register for newsletter</h2>
+
+  <div class="submission-form">
+   <div class="form">
+  <form name="login-form" onsubmit="validateForm()">
+
+    <input type="email" name="email" placeholder="Enter email" autocomplete="off" ><br>
+    <input type="text" name="pwd" placeholder="Name"><br>
+
+   <button type="submit">Submit</button>
+   <br>
+   <br>
+   <button type="reset" onclick="reset()">Reset</button>
+
+  </form>
+  </div>
+</div>
+<a href="C:\Users\Akshaya Gangurde\Desktop\Home\WT\page1.html"><button class="tablink" >Previous Page</button></a>
+
+</body>
+
+
+</html>

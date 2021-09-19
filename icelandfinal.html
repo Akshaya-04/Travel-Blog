@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {background-image: url('ice.jfif');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;}
+  h2{color:white;}
+  p{color:white;}
+  a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.next {
+  background-color: Plum;
+  color: white;
+}
+
+.round {
+  border-radius: 50%;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    var div = $("div");
+    div.animate({left: '670px'}, "slow");
+    div.animate({fontSize: '3em'}, "slow");
+  });
+});
+</script>
+</head>
+<body>
+<center>
+
+<button>Start Animation</button>
+<div style="background:Plum;height:100px;width:200px;position:absolute;">Iceland!</div>
+<br><br><br><br><br><br>
+<h2> A geological wonderland that feels like the Nature Channel come to life </h2>
+<p> Icecaps and glaciers, spouting geysers and steaming solfataras, volcanoes, raging rivers and magnificent waterfalls, clusters of puffins and razorbills, and cavorting whales just offshore—it's all just another day in Iceland. This country's many geological wonders have brought a tourism boom, with most first-time visitors driving the Golden Circle Route through the southwest. But lively Reykjavik has plenty of man-made attractions, too, including the magestic Hallgrimskirkja church and a music scene that doesn't quit. Geothermal baths are also a major draw, such as the mineral-rich Blue Lagoon.
+<h2> Must Visit Destination </h2>
+<h3> Reykjavik, Iceland <h3>
+<img src="rey.jpg" alt="Avatar" class="image">
+<br><br><br>
+
+<a href="lights.html" class="previous round">&#8249;</a>
+<a href="page1.html" class="next round">&#8250;</a>
+</body>
+
+
+</html>

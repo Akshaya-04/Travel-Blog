@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  body {background-image: url('ice.jfif');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;}
+  h2{color:white;}
+  p{color:white;}
+.hovimg{
+  .container
+{
+  position: relative;
+  width: 50%;
+}
+.image
+{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.overlay
+{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: Plum;
+}
+.container:hover .overlay
+{
+  opacity: 1;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}}
+  </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    var div = $("div");
+    div.animate({left: '670px'}, "slow");
+    div.animate({fontSize: '3em'}, "slow");
+  });
+});
+</script>
+</head>
+<body>
+<center>
+<button>Start Animation</button>
+<div class="ani" style="background:Plum;height:100px;width:200px;position:absolute;">Iceland!</div>
+<br><br><br><br><br><br>
+<h2> A geological wonderland that feels like the Nature Channel come to life </h2>
+<p> Icecaps and glaciers, spouting geysers and steaming solfataras, volcanoes, raging rivers and magnificent waterfalls, clusters of puffins and razorbills, and cavorting whales just offshore—it's all just another day in Iceland. This country's many geological wonders have brought a tourism boom, with most first-time visitors driving the Golden Circle Route through the southwest. But lively Reykjavik has plenty of man-made attractions, too, including the magestic Hallgrimskirkja church and a music scene that doesn't quit. Geothermal baths are also a major draw, such as the mineral-rich Blue Lagoon.
+<h2> Must Visit Destination </h2>
+<div class="hovimg">
+<div class="container">
+  <img src="rey.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Reykjavik, Iceland</div>
+  </div>
+</div>
+</div>
+</body>
+</html>
